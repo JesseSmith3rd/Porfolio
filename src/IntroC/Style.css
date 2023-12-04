@@ -1,0 +1,42 @@
+.intro-container {   
+    display: flex; 
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-image-container{
+    margin-right: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    mask-image: url('/public/images/wave.svg');
+    mask-size: cover;
+    mask-position: center;
+
+    animation: wave 2s infinite alternate;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+    
+}
+intro-text {
+    flex-grow:1;
+}
+
+body {
+    background-image: url('/public/images/background.jpg');   
+    background-size: cover;
+    background-position: center;
+    color: blanchedalmond;
+}
