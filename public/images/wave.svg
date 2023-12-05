@@ -1,5 +1,5 @@
 <!-- wave.svg -->
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <path d="M0 50 Q25 75, 50 50 T100 50 V100 H0 Z" fill="#000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" height="100" width="100">
+  <path d="M0 50 Q30 200, 0 0 T100 0 V100 H0 Z" fill="1000"/>
 </svg>

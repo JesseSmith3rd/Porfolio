@@ -10,14 +10,13 @@
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
     object-fit: cover;
     mask-image: url('/public/images/wave.svg');
-    mask-size: cover;
+    mask-size: 100% 100%; /* cover the entire image*/
     mask-position: center;
-
     animation: wave 2s infinite alternate;
 }
 
