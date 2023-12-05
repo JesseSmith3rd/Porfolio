@@ -1,5 +1,8 @@
 .intro-container {   
     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -9,9 +12,9 @@
     margin-right: 20px;
 }
 
-.profile-image {
-    width: 250px;
-    height: 250px;
+.profile-image {   
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     object-fit: cover;
     mask-image: url('/public/images/wave.svg');
@@ -21,16 +24,20 @@
 }
 
 @keyframes wave {
-    0% {
-        transform: translate(0);
+    0%, 100% {
+        transform: translateY(0);
     }
     100% {
-        transform: translateY(-10px);
-    }
+        transform: translateY(-25px);
+}
+
+
+
     
 }
-intro-text {
+.intro-text {
     flex-grow:1;
+    text-align: center;
 }
 
 body {
