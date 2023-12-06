@@ -28,7 +28,6 @@ const Intro = () => {
         <ul>
         <li>Project 1: Brief description</li>
         <li>Project 2: Brief description</li>
-        {/* Add more projects as needed */}
         </ul>
         </div>
     </div>

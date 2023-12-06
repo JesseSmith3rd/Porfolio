@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Intro from './IntroC/Intro.jsx';
+import Intro from './components/Intro.jsx';
+import AppRouter from '/AppRouter.js';
 
 function App() {
   return (   
     <div>
-      <Intro />
+      <Intro/>
+    </div>,
+    <div className='App'>
+      <AppRouter />
     </div>
   );
 }
