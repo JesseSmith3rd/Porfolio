@@ -1,16 +1,20 @@
-import './App.css';
-import Intro from './components/Intro.jsx';
-import AppRouter from '/AppRouter.js';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Intro from './Pages/Intro';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
 
-function App() {
-  return (   
-    <div>
-      <Intro/>
-    </div>,
-    <div className='App'>
-      <AppRouter />
-    </div>
+
+const App = () => {
+  return (
+    <Router>   
+      <Routes>
+        <Route path="/" element={<Intro/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/Projects" element={<Projects/>}/>
+      </Routes>  
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,8 +1,9 @@
 import React from "react";
 import './Style.css';
+import { Link } from "react-router-dom";
 
 const Intro = () => {
-    return (        
+    return ( 
         <div className='.intro-container'>
              <div className='.profile-image-container'>
             <img
@@ -14,21 +15,12 @@ const Intro = () => {
         </div>,     
     <div className="intro-text">
         <h1>Jesse  Smith</h1>
+        <Link to="/">Intro</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Projects">Projects</Link>
         <p>
             Hello! I'm Jesse Smith, a passionate software engineer with a focus on business.
         </p>
-        <h2>About Me</h2>
-        I am a Engineer with a background in technology. My interest is in Software Development. 
-        <h2>Degrees</h2>
-        <li>Masters of Information Systems</li>
-        <li>Bachelors of Science in Information technology</li>
-        <li>Associate of Arts</li>
-        <li>Advanced Software Developer Certificate</li>
-        <h2>Projects</h2>
-        <ul>
-        <li>Project 1: Brief description</li>
-        <li>Project 2: Brief description</li>
-        </ul>
         </div>
     </div>
     );
