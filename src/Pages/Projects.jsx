@@ -9,8 +9,6 @@ const Projects = () => {
         <li>Project 1: Brief description</li>
         <li>Project 2: Brief description</li>
         </ul>
-        <Link to="/">Intro</Link>,
-        <Link to="/About">About</Link>
     </>
   );
 };

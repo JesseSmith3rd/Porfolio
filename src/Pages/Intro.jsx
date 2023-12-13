@@ -1,5 +1,4 @@
 import React from "react";
-import './Style.css';
 
 const Intro = () => {
     return ( 
@@ -15,7 +14,7 @@ const Intro = () => {
     <div className="intro-text">
         <h1>Jesse  Smith</h1>
         <p>
-            Hello! I'm Jesse Smith, a passionate software engineer with a focus on business.
+            Hello! I'm Jesse Smith, a passionate software engineer on improving business.
         </p>
         </div>
     </div>

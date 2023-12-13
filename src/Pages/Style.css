@@ -1,5 +1,5 @@
 .intro-container {   
-    display: flex; 
+    display:flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -13,8 +13,8 @@
 }
 
 .profile-image {   
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
     border-radius: 100%;
     object-fit: cover;
     mask-image: url('/public/images/wave.svg');
@@ -28,25 +28,81 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-25px);
+        transform: translateY(-23px);
+}
 }
 
-
-
-    
+.AboutMe{
+    padding: 20px;
 }
-.intro-text {
+
+.intro-text, .animate-character {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      white 0%,
+      blue 29%,
+      white 67%,
+      blue 100%
+    );
     flex-grow:1;
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+       
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 20% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display:center;
+    font-size: 30px;
 }
 
+@keyframes textclip {
+    to {
+      background-position: 80% center;
+    }
+  }
+
 body {
-    background-image: url('/public/images/background.jpg');   
+    background-image: url('/public/images/IntroImage.jpg');   
     background-size: cover;
     background-position: center;
     color: blanchedalmond;
 }
 
-.button{
+.navbar{
+   top:0;
+   right: 10%;
+   position:fixed;   
+}
+
+.navbutton {
+    background-color: blue; /* blue */
+    border: 2px solid ;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;  
+}
+
+.navbutton:hover {
+    background-color: gray; /* blue*/
+    color: white;
+}
+
+
+.AboutMe {
+    font-size: 15px;
+    text-align: center;
+    padding: 1cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
